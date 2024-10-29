@@ -41,7 +41,7 @@ To Run Locally:
 
 <h3>Config .env variables</h2>
 
-Use the `.env.example` as reference to create your configuration file `.env` with your AWS Credentials
+Use the `.env.example` as reference to create your configuration file `.env` with your Credentials
 
 ```yaml
 MONGO_URI=
