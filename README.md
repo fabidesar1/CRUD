@@ -4,7 +4,7 @@
  <a href="#tech">Technologies</a> • 
  <a href="#started">Getting Started</a> • 
  <a href="#routes">API Endpoints</a> •
- <a href="#structure">Collaborators</a> •
+ <a href="#structure">Project Structure</a> •
 </p>
 
 
