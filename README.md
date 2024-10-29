@@ -10,11 +10,11 @@
 
 
 <h2 id="tech">💻 Technologies</h2>
-- Express
-- Bcrypt
-- Tailwind
-- MongoDB
-- NodeJS
+<br>- Express
+<br>- Bcrypt
+<br>- Tailwind
+<br>- MongoDB
+<br>- NodeJS
 
 <h2 id="started">🚀 Getting started</h2>
 <h3>Prerequisites</h3>
@@ -30,13 +30,14 @@ How to start your project
 
 To Run Locally:
 1. Install dependencies using `npm`.
-2. Rode o servidor após instalar as dependências:
+2. 2. Run the server after installing the dependencies:
 
-   - Para executar localmente:
+   - To run locally:
      ```bash
      cd .\src\
      nodemon app.js
      ```
+
 
 ##Environment Variables
 Refer to the .example.env file for environment variables.
@@ -64,10 +65,11 @@ Here you can list the main routes of your API, and what are their expected reque
 **RESPONSE**
 ```json
 {
-  username: "user.username",
-  url: "user.url",
-  description: "user.description",
-  createdAt: "user.date",
+
+  "username": "user.username",
+  "url": "user.url",
+  "description": "user.description",
+  "createdAt": "user.date",
 }
 ```
 
@@ -89,12 +91,12 @@ Here you can list the main routes of your API, and what are their expected reque
 ```
 
 <h2 id='structure'>Project Structure </h2>
-- **`public`**: Holds static files like HTML and JavaScript files.
-  - **`js`**: Contains JavaScript files for page configurations and scripts.
-- **`src`**: Contains the main application code.
-  - **`models`**: Database models for `post` and `user`.
-  - **`routes`**: API route definitions, such as `auth.js`.
-- **`.env`**: Environment variables file.
-- **`app.js`**: Main application entry point.
-- **`tailwind.config.js`**: Tailwind CSS configuration file.
+<br>- **`public`**: Holds static files like HTML and JavaScript files.
+ <br> - **`js`**: Contains JavaScript files for page configurations and scripts.
+<br>- **`src`**: Contains the main application code.
+ <br> - **`models`**: Database models for `post` and `user`.
+<br>  - **`routes`**: API route definitions, such as `auth.js`.
+<br>- **`.env`**: Environment variables file.
+<br>- **`app.js`**: Main application entry point.
+<br>- **`tailwind.config.js`**: Tailwind CSS configuration file.
 
