@@ -81,7 +81,7 @@ router.get("/api/user", (req, res) => {
     }
 });
 
-router.get("/api/posts/:username", async (req, res) => {
+router.get("/api/posts/:user", async (req, res) => {
     try {
         const username = req.params.username;
 
