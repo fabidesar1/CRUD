@@ -30,9 +30,9 @@ How to start your project
 
 To Run Locally:
 1. Install dependencies using `npm`.
-2. 2. Run the server after installing the dependencies:
+2. Run the server after installing the dependencies:
 
-   - To run locally:
+- To run locally:
      ```bash
      cd .\src\
      nodemon app.js
