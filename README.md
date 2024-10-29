@@ -1,10 +1,10 @@
 #<h1 align="center" style="font-weight: bold;">CRUD of Login and Posts 💻</h1>
 
 <p align="center">
- <a href="#tech">Technologies</a> • 
- <a href="#started">Getting Started</a> • 
- <a href="#routes">API Endpoints</a> •
- <a href="#structure">Project Structure</a> •
+•  <a href="#tech">Technologies</a> 
+ •  <a href="#started">Getting Started</a>
+• <a href="#routes">API Endpoints</a> 
+• <a href="#structure">Project Structure</a> 
 </p>
 
 
