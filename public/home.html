@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Postagens</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>funcionou</h1>
+<body class="bg-gray-900 text-white">
+    <div class="flex">
+        <div class="w-1/6 bg-gray-800 shadow-lg h-screen">
+            <div class="p-4">
+                <div class="container mx-auto flex justify-between items-center">
+                  <h1 class="text-xl font-bold">Postagens</h1>
+                  <span id="displayName" class="text-xl mr-5"></span>
+                </div>
+                <ul class="mt-4">
+                    <a href="/"><li class="py-2 hover:bg-gray-700 px-4 rounded">Home</li></a>
+                    <li id="perfil"></li>
+                    <li onclick="logout()" class="py-2 hover:bg-gray-700 px-4 rounded cursor-pointer">Sair</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-1 p-4">
+          <form action="/" method="POST" >
+              <input type="hidden" id="username" name="username">
+              <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-2">
+                  <textarea name="description" class="w-full h-24 border border-gray-700 bg-gray-700 text-white rounded p-2 resize-none" placeholder="O que está acontecendo?"></textarea>
+                  <div class="w-full mt-3">
+                    <input type="url" id="imagemUrl" name="url" placeholder="Cole o link da imagem (opcional)"
+                      class="w-full  border border-gray-700 bg-gray-700 text-white rounded p-2">
+                  </div>
+                  <button type="submit" class="mt-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Postar</button>
+              </div>
+             
+          </form>
+
+          <div id="postsContainer" class="flex flex-col-reverse">
+                
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/homeConfig.js" defer></script>
 </body>
 </html>

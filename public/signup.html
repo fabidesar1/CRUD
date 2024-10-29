@@ -12,38 +12,33 @@
   <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
     <h2 class="text-2xl font-bold text-center text-gray-800">Criar Conta</h2>
     
-    <form class="mt-6" method="POST">
+    <form class="mt-6" action="/signup" method="POST">
   
       <div class="mb-4">
-        <label class="block text-sm font-medium text-gray-700" for="name">Nome Completo</label>
+        <label class="block text-sm font-medium text-gray-700" for="name">Usuario</label>
         <input class="w-full px-3 py-2 mt-1 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-               type="text" id="name" placeholder="Digite seu nome completo" required>
+               type="text" name="username" placeholder="Digite seu Usuario" required>
       </div>
-
-
-      <div class="mb-4">
-        <label class="block text-sm font-medium text-gray-700" for="email">E-mail</label>
-        <input class="w-full px-3 py-2 mt-1 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-               type="email" id="email" placeholder="Digite seu e-mail" required>
-      </div>
-      
 
       <div class="mb-4">
         <label class="block text-sm font-medium text-gray-700" for="password">Senha</label>
         <input class="w-full px-3 py-2 mt-1 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-               type="password" id="password" placeholder="Digite sua senha" required>
+               type="password" id="password" name="password" placeholder="Digite sua senha" required>
       </div>
       
-
       <div class="mb-6">
         <label class="block text-sm font-medium text-gray-700" for="confirm-password">Confirmar Senha</label>
         <input class="w-full px-3 py-2 mt-1 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-               type="password" id="confirm-password" placeholder="Confirme sua senha" required>
+               type="password" id="confirm" name="confirm" placeholder="Confirme sua senha" required>
+        
       </div>
       
-  
-      <button class="w-full px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"><a href="signin.html" >Criar Conta</a>
-        
+      <div class="flex justify-center">
+        <span class="text-red-500" id="span"></span>
+      </div>
+      <button class="w-full px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 
+      focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" onclick="passwordValidation()">
+        Criar Conta
       </button>
     </form>
     
@@ -53,5 +48,8 @@
     </div>
   </div>
 
+
+    <script src="../src/app.js"></script>
+    <script src="./js/signupConfirm.js"></script>
 </body>
 </html>
