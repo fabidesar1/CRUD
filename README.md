@@ -39,9 +39,6 @@ To Run Locally:
      ```
 
 
-##Environment Variables
-Refer to the .example.env file for environment variables.
-
 <h3>Config .env variables</h2>
 
 Use the `.env.example` as reference to create your configuration file `.env` with your AWS Credentials
