@@ -68,33 +68,6 @@ async function fetchPosts() {
     }
 }
 
-
-function editPost(postId, currentDescription, currentUrl) {
-    const postElement = document.getElementById(`post-${postId}`);
-    postElement.innerHTML = `
-        <textarea id="editDescription-${postId}" class="bg-gray-800 p-2 w-full rounded-lg">${currentDescription}</textarea>
-        <input id="editUrl-${postId}" class="bg-gray-800 p-2 w-full rounded-lg mt-2" value="${currentUrl || ''}" placeholder="Link da imagem (opcional)" />
-        <button class="bg-green-500 hover:bg-green-600 text-white py-1 px-3 rounded mt-3" onclick="saveEdit('${postId}')">Salvar</button>
-        <button class="bg-red-500 hover:bg-red-600 text-white py-1 px-3 rounded mt-3 ml-2" onclick="cancelEdit('${postId}', '${currentDescription}', '${currentUrl || ''}')">Cancelar</button>
-    `;
-}
-
-async function cancelEdit(){
-    window.location.reload();
-}
-
-async function saveEdit(postId) {
-    const description = document.getElementById(`editDescription-${postId}`).value;
-    const url = document.getElementById(`editUrl-${postId}`).value;
-
-    try {
-        await axios.put(`/api/posts/${postId}`, { description, url });
-        fetchPosts();
-    } catch (error) {
-        console.error('Erro ao salvar a edição:', error);
-    }
-}
-
 async function deletePost(postId) {
     try {
         const response = await fetch(`/posts/${postId}`, {
