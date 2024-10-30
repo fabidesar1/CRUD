@@ -6,50 +6,51 @@
   <title>Signup</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
+<body class="bg-gray-900 flex items-center justify-center h-screen">
 
-
-  <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold text-center text-gray-800">Criar Conta</h2>
+  <div class="w-full max-w-md bg-gray-800 p-8 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-center text-white">Criar Conta</h2>
     
     <form class="mt-6" action="/signup" method="POST">
   
       <div class="mb-4">
-        <label class="block text-sm font-medium text-gray-700" for="name">Usuario</label>
-        <input class="w-full px-3 py-2 mt-1 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-               type="text" name="username" placeholder="Digite seu Usuario" required>
+        <label class="block text-sm font-medium text-gray-400" for="name">Usuário</label>
+        <input class="w-full px-3 py-2 mt-1 text-sm border-none rounded-lg bg-gray-700 text-gray-300 placeholder-gray-500 focus:outline-none
+         focus:ring-2 focus:ring-blue-500"
+               type="text" name="username" placeholder="Digite seu Usuário" required>
       </div>
 
       <div class="mb-4">
-        <label class="block text-sm font-medium text-gray-700" for="password">Senha</label>
-        <input class="w-full px-3 py-2 mt-1 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        <label class="block text-sm font-medium text-gray-400" for="password">Senha</label>
+        <input class="w-full px-3 py-2 mt-1 text-sm border-none rounded-lg bg-gray-700 text-gray-300 placeholder-gray-500 focus:outline-none
+         focus:ring-2 focus:ring-blue-500"
                type="password" id="password" name="password" placeholder="Digite sua senha" required>
       </div>
       
       <div class="mb-6">
-        <label class="block text-sm font-medium text-gray-700" for="confirm-password">Confirmar Senha</label>
-        <input class="w-full px-3 py-2 mt-1 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        <label class="block text-sm font-medium text-gray-400" for="confirm-password">Confirmar Senha</label>
+        <input class="w-full px-3 py-2 mt-1 text-sm border-none rounded-lg bg-gray-700 text-gray-300 placeholder-gray-500 focus:outline-none
+         focus:ring-2 focus:ring-blue-500"
                type="password" id="confirm" name="confirm" placeholder="Confirme sua senha" required>
-        
       </div>
       
       <div class="flex justify-center">
         <span class="text-red-500" id="span"></span>
       </div>
+      
       <button class="w-full px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 
-      focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" onclick="passwordValidation()">
+      focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900" onclick="passwordValidation()">
         Criar Conta
       </button>
     </form>
     
 
     <div class="mt-6 text-center">
-      <p class="text-sm text-gray-600">Já tem uma conta? <a href="/login" class="text-blue-500 hover:underline">Entrar</a></p>
+      <p class="text-sm text-gray-400">Já tem uma conta? <a href="/login" class="text-blue-400 hover:underline">Entrar</a></p>
     </div>
   </div>
 
-
-    <script src="../src/app.js"></script>
-    <script src="./js/signupConfirm.js"></script>
+  <script src="../src/app.js"></script>
+  <script src="./js/signupConfirm.js"></script>
 </body>
 </html>
